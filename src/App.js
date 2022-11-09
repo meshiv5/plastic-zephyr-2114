@@ -1,9 +1,12 @@
 import "./App.css";
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>Reliance Digital</h1>
+      <Navbar />
+      <Home />
     </div>
   );
 }
