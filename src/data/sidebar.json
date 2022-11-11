@@ -1,0 +1,1314 @@
+[
+  { "title": "Categories", "type": "section" },
+  {
+    "title": "Mobiles & Tablets",
+    "type": "category",
+    "icon": "bi-phone",
+    "childrens": [
+      {
+        "title": "Smartphones", 
+        "path": "/",
+        "type": "sub-category"
+      },
+      {
+        "title": "Wearable Technology",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Boat New Launch",
+              "path": "/",
+              "type": "product"
+            }
+        ]
+      },
+      {
+        "title": "Accessories",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Tablet Accessories",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Mobile Accessories",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Mobile Grips & Stands",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Car Mobile Holders",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Memory Cards",
+              "path": "/",
+              "type": "product"
+            }
+           
+        ]
+      },
+      {
+        "title": "Headphones & Headsets", 
+        "path": "/",
+        "type": "sub-category"
+      },
+      {
+        "title": "Tablets & eReaders",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Every Day use Tablets below 15000",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Premium Tablets,Above 15001",
+              "path": "/",
+              "type": "product"
+            }
+        ]
+      },
+      {
+        "title": "Power Banks", 
+        "path": "/",
+        "type": "sub-category"
+      },
+      {
+        "title": "eSlates", 
+        "path": "/",
+        "type": "sub-category"
+      },
+      {
+        "title": "AI Learning Robots", 
+        "path": "/",
+        "type": "sub-category"
+      }
+      
+    ]
+  },
+  
+  {
+    "title": "Televisions",
+    "type": "category",
+    "icon": "bi-tv",
+    "childrens": [
+      {
+        "title": "Televisions",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Smart Tvs",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "32 Inch Tvs",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "43 Inch Tvs",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "55 Inch Tvs",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Andriod Tvs",
+              "path": "/",
+              "type": "product"
+            }
+            
+        ]
+      },
+      {
+        "title": "Gaming",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Gaming Consoles",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Gaming Accessories",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Gaming Titles",
+              "path": "/",
+              "type": "product"
+            }
+            
+           
+        ]
+      },
+      {
+        "title": "Projectors", 
+        "path": "/",
+        "type": "sub-category"
+      },
+      {
+        "title": "Streaming Devices", 
+        "path": "/",
+        "type": "sub-category"
+      },
+      {
+        "title": "Reconnect Disney | Marvel Audio Collection", 
+        "path": "/",
+        "type": "sub-category"
+      },
+      {
+        "title": "TV & Audio Accessories",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Virtual Reality Headsets",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Stabilizers & Surge Protectors",
+              "path": "/",
+              "type": "product"
+            }
+        ]
+      }
+    
+      
+    ]
+  },
+  
+  {
+    "title": "Audio",
+    "type": "category",
+    "icon": "bi-headphones",
+    "childrens": [
+      {
+        "title": "Headphones & Headsets",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "True Wireless",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Bluetooth Neckbands",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Wired Earphones",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "On Ear Headphones",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Noise Cancelling Headphones",
+              "path": "/",
+              "type": "product"
+            }
+            
+        ]
+      },
+      {
+        "title": "Bluetooth & WiFi Speakers",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Bluetooth Speakers",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Smart Speaker",
+              "path": "/",
+              "type": "product"
+            }
+             
+        ]
+      },
+      {
+        "title": "TV Speakers & Soundbars", 
+        "path": "/",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Soundbars",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Home Theatre Systems",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Party Speakers",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Multimedia",
+              "path": "/",
+              "type": "product"
+            }
+            
+             
+        ]
+      },
+      {
+        "title": "Musical Instruments",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Guitars and Ukuleles",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Microphones",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Musical Keyboards",
+              "path": "/",
+              "type": "product"
+            }
+        ]
+      }  
+    ]
+  },
+  {
+    "title": "Home Appliances",
+    "type": "category",
+    "icon": "bi-plug-fill",
+    "childrens": [
+      {
+        "title": "Air Conditioners",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Split Air Conditioners",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Window Air Conditioners",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Smart Air Conditioners",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Energy Efficient Air Conditioners",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "1 ton Air Conditioners",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "1.5 ton Air Conditioners",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "5 star Air Conditioners",
+              "path": "/",
+              "type": "product"
+            }
+            
+        ]
+      },
+      {
+        "title": "Air Coolers",
+        "path": "/about",
+        "type": "sub-category"
+        
+      },
+      {
+        "title": "Air Purifiers",
+        "path": "/about",
+        "type": "sub-category"
+        
+      },
+      {
+        "title": "Washing Machines", 
+        "path": "/",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Fully Automatic Front Load",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Fully Automatic Top Load",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Semi-Automatic Top Load",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Washing Machine Detergents & Liquids",
+              "path": "/",
+              "type": "product"
+            }
+            
+             
+        ]
+      },
+      {
+        "title": "Refrigerators",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Single Door",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Double Door",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Side by Side Refrigerators",
+              "path": "/",
+              "type": "product"
+            },
+            {
+              "title": "Convertible",
+              "path": "/",
+              "type": "product"
+            }
+        ]
+      },
+      {
+        "title": "Vaccum Cleaners",
+        "path": "/about",
+        "type": "sub-category",
+        "childrens": [
+            {
+              "title": "Robotic Vaccum Cleaners",
+              "path": "/",
+              "type": "product"
+            }
+           
+        ]
+      },
+      {
+        "title": "Dishwashers",
+        "path": "/search",
+        "type":"sub-category"
+      }, 
+      {
+        "title": "Fans",
+        "path": "/search",
+        "type":"sub-category"
+      }, 
+      {
+        "title": "Cloth Dryers",
+        "path": "/search",
+        "type":"sub-category"
+      }, 
+      {
+        "title": "Geysers",
+        "path": "/search",
+        "type":"sub-category"
+      }, 
+      {
+        "title": "Room Heaters",
+        "path": "/search",
+        "type":"sub-category"
+      } 
+    ]
+  },
+  {
+    "title": "Computers",
+    "icon": "bi-laptop",
+    "type":"category",
+    "childrens": [
+      {
+        "title": "Laptops",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+            {
+                "title": "Basic use Laptops",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Student Laptops",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Thin and light Laptops",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Multi-Tasking Laptops",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Gaming Laptops",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Content creator Laptops",
+                "path": "/",
+                "type": "product"
+            }
+        ]
+      },
+      {
+        "title": "Computer Monitors",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Desktops & All-in-Ones",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Bluetooth & WiFi Speakers",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Internet Connectivity Devices",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+            {
+                "title": "Routers",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "WiFi Range Extenders",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Wireless USB Adapters",
+                "path": "/",
+                "type": "product"
+            }
+        ]
+      },
+      {
+        "title": "Printers & Inks",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+            {
+                "title": "Basic use Printers",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Toners & Inks Cartridges",
+                "path": "/",
+                "type": "product"
+            }
+          
+        ]
+      },
+      {
+        "title": "Data Storage Devices",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+            {
+                "title": "Memory Cards",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Pen Drives & OTG Drives",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Hard Disks & SSD",
+                "path": "/",
+                "type": "product"
+            }
+           
+        ]
+      },
+      {
+        "title": "Computer Accessories",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+            {
+                "title": "Upto 72% Off, Only on Reliancedigital.in",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Computer Networking Cables",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Laptop Chargers & Adapters",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Laptop Batteries",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Hubs & Docks",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Laptop Bags & Sleeves",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Laptop Cooling Pad",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Laptop Screen Protecttors",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Laptop Tables & Stands",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Mouse Pads",
+                "path": "/",
+                "type": "product"
+            }
+        ]
+      },
+      {
+        "title": "Input Devices",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+            {
+                "title": "Keyboards",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Computer Mouse",
+                "path": "/",
+                "type": "product"
+            },
+            {
+                "title": "Stylus Pens",
+                "path": "/",
+                "type": "product"
+            }
+           
+        ]
+      }
+      
+    ]
+  },
+  {
+    "title": "Camera",
+    "icon": "bi-camera-fill",
+    "type":"category",
+    "childrens": [
+      {
+        "title": "DSLR Cameras",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Mirrorless Cameras",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Point & Shoot Cameras",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "ProSumer Cameras",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Action Cameras",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+          "title": "Photo Storage Devices",
+          "path": "/search",
+          "type":"sub-category",
+          "childrens":[
+              {
+                "title": "Memory Cards",
+                "path": "/search",
+                "type":"product"
+              },
+              {
+                "title": "Pen Drives",
+                "path": "/search",
+                "type":"product"
+              }
+              
+            ]
+        },
+        {
+          "title": "Binoculars",
+          "path": "/search",
+          "type":"sub-category"
+        },
+        {
+          "title": "Camera Lens",
+          "path": "/search",
+          "type":"sub-category"
+        },
+        {
+            "title": "Digital Camera Accessories",
+            "path": "/search",
+            "type":"sub-category",
+            "childrens":[
+              {
+                "title": "Camera Batteries & Chargers",
+                "path": "/search",
+                "type":"sub-category"
+              },
+              {
+                "title": "Camera bags & cases",
+                "path": "/search",
+                "type":"sub-category"
+              },
+              {
+                "title": "Tripods & Monopods",
+                "path": "/search",
+                "type":"sub-category"
+              },
+              {
+                "title": "Action Camera Accessories",
+                "path": "/search",
+                "type":"sub-category"
+              }
+
+          ]
+        }
+    ]
+  },
+
+
+
+  {
+    "title": "Kitchen Appliances",
+    "icon": "bi-plug-fill",
+    "type":"category",
+    "childrens": [
+      {
+        "title": "Microwave Ovens",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Water Purifiers",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Fruits and Vegetables Cleaner",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Oven Toaster Grillers (OTG)",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Cookwares",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+          "title": "Juicer Mixer Grinders",
+          "path": "/search",
+          "type":"sub-category",
+          "childrens":[
+            {
+              "title": "Juicers",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Hand Mixers",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Mixer Grinders",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Choppers & Slicers",
+              "path": "/search",
+              "type":"product"
+            }
+            
+        ]
+    },
+    {
+      "title": "Induction Cookers",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Food Processors",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Belnders",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Kitchen Hobs & Gas Stoves",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Kitchen Chimneys",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Rice Cookers",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Sandwich Makers",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Popup Toasters",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Coffee Makers & Grinders",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Reconnect Disney|Marvel Kitchen Collection",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Air Fryers",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Specialty Appliances",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Electric Kettles",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Water Dispensers",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Wet Grinders",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Flour Mills",
+      "path": "/search",
+      "type":"sub-category"
+    }
+      
+    ]
+  },
+
+
+
+  {
+    "title": "Personal Care",
+    "icon": "bi-plug-fill",
+    "type":"category",
+    "childrens": [
+      {
+        "title": "Shavers & Trimmers",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Epilator",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Hair Dryers & Stylers",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Weighing Scales",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title": "Irons",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+          "title": "Reconnect Disney|Marvel Grooming Collection",
+          "path": "/search",
+          "type":"sub-category"
+        },
+        {
+            "title": "Hygiene & Personal Care",
+            "path": "/search",
+            "type":"sub-category",
+            "childrens":[
+            {
+              "title": "Digital Thermometers",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Massagers",
+              "path": "/search",
+              "type":"product"
+            },
+            
+            {
+              "title": "Misc. Care Devices",
+              "path": "/search",
+              "type":"product"
+            }
+        ]
+    },
+    {
+      "title": "Garment Steamers",
+      "path": "/search",
+      "type":"sub-category"
+    }
+      
+    ]
+  },
+  {
+    "title": "Accessories",
+    "icon": "bi-usb-symbol",
+    "type":"category",
+    "childrens": [
+      {
+        "title": "Bags, Cases & Sleeves",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+          "title": "Smart Devices",
+          "path": "/history",
+          "type":"sub-category",
+          "childrens":[
+            {
+              "title": "Smart Plugs",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Smart Cameras",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Smart Sensors",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Smart Lights",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Smart Speakers",
+              "path": "/search",
+              "type":"product"
+            },
+            {
+              "title": "Smart Tracking Devices",
+              "path": "/search",
+              "type":"product"
+            }
+        ]
+    },
+    {
+      "title": "Batteries",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Power Banks",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Cables & Cords",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Chargers & Adapters",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Bluetooth & WiFi Speakers",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title": "Reconnect Disney | Marvel Accessories",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+        "title": "Data Storage Devices",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+          {
+            "title": "Memory Cards",
+            "path": "/search",
+            "type":"product"
+          },
+          {
+            "title": "Pen Drives & OTG Drives",
+            "path": "/search",
+            "type":"product"
+          },
+          {
+            "title":"Hard Disks & SSD",
+            "path": "/search",
+            "type":"product"
+          }
+
+      ]
+    },
+    {
+        "title": "Mount & Stands",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+          {
+            "title": "Air Conditioner Stands",
+            "path": "/search",
+            "type":"product"
+          },
+          {
+            "title": "Tripods & Monopods",
+            "path": "/search",
+            "type":"product"
+          },
+          {
+            "title":"Selfie Sticks",
+            "path": "/search",
+            "type":"product"
+          },
+          {
+            "title":"Car Mobile Holders",
+            "path": "/search",
+            "type":"product"
+          },
+          {
+            "title":"Laptop Stands",
+            "path": "/search",
+            "type":"product"
+          },
+          {
+            "title":"Mobile Grips & Stands",
+            "path": "/search",
+            "type":"product"
+          }
+          
+        ]
+    },
+    {
+      "title":"Surger Protectors",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Webcams",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Headphones & Headsets",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Cleaners & Protectors",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Computer Mouse",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Keyboards",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Indoor Lighting",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+        "title":"Office Electronics",
+        "path": "/search",
+        "type":"sub-category",
+        "childrens":[
+          {
+            "title":"Laminators",
+            "path": "/search",
+            "type":"product"
+          },
+          {
+            "title":"Paper Shredders",
+            "path": "/search",
+            "type":"product"
+          }
+          
+        ]
+    },
+    {
+      "title":"Tyre Inflators",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Routers",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Screen Guards & Protectors",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Power Strips & Extensions Cords",
+      "path": "/search",
+      "type":"sub-category"
+    },
+    {
+      "title":"Stabilizers",
+      "path": "/search",
+      "type":"sub-category"
+    }
+    
+    
+  ]
+  },
+  {
+    "title":"Help Section", "type": "section"
+  },
+  {
+    "title": "Cart",
+    "icon": "bi-question-circle-fill",
+    "path": "/support"
+  },
+  {
+    "title": "Find a Store",
+    "icon": "bi-geo-alt",
+    "path": "/"
+  },
+  {
+    "title": "Contact Us",
+    "icon": "bi-telephone-fill",
+    "path": "/"
+  },
+  {
+    "title": "Scanner",
+    "icon": "bi-qr-code",
+    "path": "/"
+  },
+  {
+    "title": "Buying Guides",
+    "icon": "bi-info-circle-fill",
+    "path": "/"
+    
+  },
+  {
+    "title": "Site Info",
+    "icon": "bi-diagram-3-fill",
+    "path": "/",
+    "type":"category",
+    "childrens":[
+      {
+        "title":"About Reliance Digital",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title":"ResQ Services",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title":"Site Map",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title":"Gift Cards",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title":"Corporate Enquires",
+        "path": "/search",
+        "type":"sub-category"
+      },
+      {
+        "title":"Contact us",
+        "path": "/Contact",
+        "type":"sub-category"
+      }
+      
+      
+    ]
+  },
+  {
+    "title": "Policies",
+    "icon": "bi-chat-dots-fill",
+    "path": "/",
+    "type":"category",
+    "childrens":[
+      {
+        "title":"Terms of use",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":" FAQs",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":"Cancellation and Returns",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":"Privacy Policy",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":"Shipping and Delivery Policy",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":"E-waste policy",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":"EMI Terms & Conditions",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":"Pricing and Payments Policy",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":"Reliance Loyalty T&C",
+        "path": "/Contact",
+        "type":"sub-category"
+      },
+      {
+        "title":"Caution Notice",
+        "path": "/Contact",
+        "type":"sub-category"
+      }
+    ]
+  }
+]
