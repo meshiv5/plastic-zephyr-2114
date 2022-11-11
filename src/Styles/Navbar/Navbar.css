@@ -30,6 +30,10 @@
     padding: 10px;
 }
 
+.child>div>div>p{
+    font-size: 14px;
+}
+
 #midNav>div:nth-child(2) {
     background-color: white;
     border-radius: 50px;
@@ -74,10 +78,6 @@
     background-color: rgb(228, 37, 41);
 }
 
-.child>p{
-    font-size: small;
-}
-
 .parent{
     display: flex;
     flex-direction: column;
@@ -89,15 +89,20 @@
     transition: 0.5s;
 }
 
-.child {
+.child{
     padding: 10px;
     padding-left: 2vw;
     display: none;
     background-color: rgb(38, 48, 101);
     margin-top: 16.5vh;
-    transition: 2s;
+}
+
+.child>div{
+    display: flex;
+    gap: 3vw;
 
 }
+
 .parent:hover .child {
     display: block;
     position: absolute;
@@ -118,6 +123,7 @@
     #cart {
         display: block;
     }
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -138,4 +144,8 @@
     #botNav {
         display: none;
     }
+}@media screen and (max-width:1920px){
+  .child{
+    margin-top: 122px;
+  }
 }
