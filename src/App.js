@@ -1,11 +1,19 @@
-import "./App.css";
+import Sidebar from './Components/Sidebar'
+import Contact from './Pages/Contact'
+import Findstore from './Pages/Findstore'
+import Return from './Pages/Return'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Reliance Digital</h1>
-    </div>
-  );
+    <>
+     {/* <div className="side-main">
+      <Sidebar />
+      <Contact />
+     </div> */}
+      {/* <Findstore /> */}
+      <Return />
+    </>
+  )
 }
 
-export default App;
+export default App

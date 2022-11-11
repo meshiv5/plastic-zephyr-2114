@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,"system",sans-serif;
+}
+.breadcm{
+    background-color: #f5f7f7;
+    border-bottom: 1px solid #e0e0e1;
+    color: #333;
+    font-size: 11px;
+    padding: 5px 10px;
+}
+.breadcm-homeicon{
+    cursor: pointer;
+    display: inline-block;
+}
+.find-title{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bredcrum{
+
+    display: block;
+    }
+    
+  
+    .bredcrum i::after {
+        content: ">";
+        font-family: Verdana, Geneva, sans-serif;
+        color: rgb(130, 130, 130);
+        padding: 0px 6px;
+    }
+    
+    .bredcrum i:last-child:after {
+        content: '';
+    }
+    .find-main2{
+        background-color: #f5f7f7;
+        max-width: 100%;
+        margin: 0 auto;
+        color: #333;
+        font-size: 11px;
+        padding:  20px;
+        text-align: center;
+    }
+    .store-head{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+        color: #003380;
+        padding: 0 10px 10px 0;
+    }
+    .inputbox{
+        padding: 9.6px;
+
+    }
+    .inputbar{
+        font-family: "Open Sans","sans-serif";
+        border: 1px solid rgb(216,226,239);
+        background-color: transparent;
+        color: rgb(32,33,36);
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 3px;
+        height: 42px;
+        padding: 8px 16px;
+        padding-right: 5rem;
+    }
+    .oruse{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .locatebtn{
+        border: 1px solid rgb(0,51,128);
+        color: rgb(0,51,128);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 0px 12px;
+        cursor: pointer;
+        border-radius: 3px;
+        line-height: 40px;
+    }
+    .iconlocate{
+        height: 18px;
+        width: 18px;
+        margin-bottom: -3px;
+        margin-right: 4px;
+        max-width: 100%;
+    }
+    .storebox{
+        display: flex;
+        justify-content: center;
+    }
+    .storetext{
+        border: 1px solid red;
+        width: 22%;
+        box-shadow: 0 0 8px 0 hsl(0deg 0% 75% / 40%);
+        margin: 10px;
+        padding: 40px 20px 20px;
+        text-align: center;
+        vertical-align: top;
+    }
+    .storetext{
+        border: 1px solid blue;
+    }
