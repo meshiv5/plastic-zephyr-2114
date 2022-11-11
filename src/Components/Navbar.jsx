@@ -1,5 +1,8 @@
 import React from 'react'
 import '../Styles/Navbar/Navbar.css'
+//  import { Route,Routes } from 'react-router-dom'
+// import Login from "../Pages/Login"
+
 
 export default function Navbar() {
     return (
@@ -30,10 +33,14 @@ export default function Navbar() {
                     <h5>Select your PIN Code</h5>
                     <hr className='topNavDivider' />
                     <img id='cart' width='20px' src="https://cdn-icons-png.flaticon.com/512/649/649931.png" alt="cartIcon" />
-                    <h5>Cart</h5>
+                    {/* <Route path='/cart' element={<Cart/>}/> */}
+                    <h3>Cart</h3>
                     <hr className='topNavDivider' />
                     <img width='20px' src="https://cdn-icons-png.flaticon.com/512/2321/2321232.png" alt="loginIcon" />
                     <h5>Login</h5>
+
+
+             
                 </div>
             </div>
 
