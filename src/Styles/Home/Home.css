@@ -1,9 +1,3 @@
-#home {
-    height: 800vh;
-}
-
-/* to be removed */
-
 #secondImage {
     display: none;
 }
@@ -170,6 +164,11 @@
         width: 83%;
     }
 }
+
+.hideImage{
+    border-radius: 20px;
+}
+
 
 @media screen and (max-width: 1450px) {
     #electronics{
