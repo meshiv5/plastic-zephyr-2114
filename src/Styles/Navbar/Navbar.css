@@ -1,0 +1,151 @@
+
+#navbar{
+    position: sticky;
+    top: 0;
+   z-index: 1000;
+}
+
+#topNav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(228, 37, 41);
+    color: white;
+}
+
+#topNav>h5 {
+    padding: 6px;
+
+}
+
+.topNavDivider {
+    background-color: rgb(228, 37, 41);
+    border: 0.1px solid rgba(255, 255, 255, 0.308);
+}
+
+#midNav {
+    background-color: rgb(228, 37, 41);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.child>div>div>p{
+    font-size: 14px;
+}
+
+#midNav>div:nth-child(2) {
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#midNav>div:nth-child(2)>input {
+    width: 500px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 1vw;
+    outline: none;
+}
+
+#midNav>div:nth-child(2)>img {
+    padding-right: 1vw;
+}
+
+#midNav>div:nth-child(3) {
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    color: white;
+}
+
+#botNav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 51, 128);
+    color: white;
+}
+
+#botNav>div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#botNav>h6:hover {
+    background-color: rgb(228, 37, 41);
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parent:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+
+.child{
+    padding: 10px;
+    padding-left: 2vw;
+    display: none;
+    background-color: rgb(38, 48, 101);
+    margin-top: 16.5vh;
+}
+
+.child>div{
+    display: flex;
+    gap: 3vw;
+
+}
+
+.parent:hover .child {
+    display: block;
+    position: absolute;
+    top: 12.5px;
+    left: 41px;
+    right: 41px;
+}
+.child:hover {
+    display: block;
+    position: absolute;
+}
+
+@media screen and (max-width: 650px) {
+    #topNav {
+        display: none;
+    }
+
+    #cart {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    #midNav>div:nth-child(3) {
+        display: none;
+    }
+
+    #midNav {
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    #midNav>div:nth-child(2)>input {
+        width: 330px;
+    }
+
+    #botNav {
+        display: none;
+    }
+}@media screen and (max-width:1920px){
+  .child{
+    margin-top: 122px;
+  }
+}

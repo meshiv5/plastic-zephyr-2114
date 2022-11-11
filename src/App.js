@@ -1,19 +1,19 @@
-import Sidebar from './Components/Sidebar'
-import Contact from './Pages/Contact'
-import Findstore from './Pages/Findstore'
-import Return from './Pages/Return'
+import "./App.css";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
+import AllRoutes from "./Routes/AllRoutes";
+
 
 function App() {
   return (
-    <>
-     {/* <div className="side-main">
-      <Sidebar />
-      <Contact />
-     </div> */}
-      {/* <Findstore /> */}
-      <Return />
-    </>
-  )
+    <div className="App">
+      <Navbar />
+      <Home />
+      <Footer />
+      <AllRoutes />
+    </div>
+  );
 }
 
-export default App
+export default App;
