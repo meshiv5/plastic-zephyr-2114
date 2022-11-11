@@ -22,12 +22,89 @@ const SingleProduct = () => {
   console.log(param);
 
   return (
-    <div>
-      <div>
-        <img src={product?.productData?.media[0]?.productImageUrl} alt="" />
+    <div
+      style={{
+        margin: "1rem auto",
+      }}
+    >
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "2fr 3fr",
+        }}
+      >
+        <div>
+          <img src={product?.productData?.media[0]?.productImageUrl} alt="" />
+        </div>
+        <div>
+          <strong>
+            <div>{product?.pageTitle}</div>
+          </strong>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+            }}
+          >
+            <div
+              dangerouslySetInnerHTML={{
+                __html: product?.productData?.summary,
+              }}
+            />
+            <div>
+              <strong>Price:</strong>
+              <strike>
+                <p
+                  style={{
+                    fontSize: "24px",
+                    color: "red",
+                  }}
+                >
+                  ₹{product?.productData?.price.mrp}
+                </p>
+              </strike>
+              <p
+                style={{
+                  fontSize: "24px",
+                  color: "Blue",
+                }}
+              >
+                ₹{product?.productData?.price.value}
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "10px",
+                }}
+              >
+                <button
+                  style={{
+                    padding: "10px 2rem",
+                    backgroundColor: "#E42529",
+                    border: "none",
+                    color: "white",
+                  }}
+                >
+                  Add to Cart
+                </button>
+                <button
+                  style={{
+                    padding: "10px 2rem",
+                    backgroundColor: "#F76027",
+                    border: "none",
+                    color: "white",
+                  }}
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>{product?.pageTitle}</div>
-      <div></div>
+      <div
+        dangerouslySetInnerHTML={{ __html: product?.productData?.description }}
+      />
     </div>
   );
 };
