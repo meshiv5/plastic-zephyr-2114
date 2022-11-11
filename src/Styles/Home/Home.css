@@ -1,16 +1,18 @@
-#home{
-    height: 200vh;
+#home {
+    height: 800vh;
 }
 
-#secondImage{
+/* to be removed */
+
+#secondImage {
     display: none;
 }
 
-#crauser{
+.crauser {
     position: relative;
 }
 
-#crauser>button{
+.crauser>button {
     font-size: 70px;
     width: 40px;
     height: 150px;
@@ -19,29 +21,191 @@
     border: 0.5px solid gray;
 }
 
-#crauser>button:hover{
+.crauser>button:hover {
     color: gray;
     transition: 0.5s;
 }
 
-#crauser>button:nth-child(2){
+.crauser>button:nth-child(2) {
     top: 60px;
     position: absolute;
     left: 0px;
 }
-#crauser>button:nth-child(3){
+
+.crauser>button:nth-child(3) {
     top: 60px;
     position: absolute;
     right: 0px;
 }
+.digitalAudioFest{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.digitalAudioFest>div {
+    display: flex;
+    gap: 10px;
+}
+
+.digitalAudioFest>div>p:nth-child(1) {
+    font-size: 23px;
+    margin-left: 2.5vw;
+}
+
+.digitalAudioFest>div>p:nth-child(3) {
+    color: rgb(0, 51, 136);
+    font-size: small;
+}
+
+.headphones {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 95%;
+    margin: auto;
+    gap: 10px;
+    margin-top: 5vh;
+    height: 500px;
+}
+
+#productsImage {
+    width: 200px;
+}
+
+#productsCard>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#productsCard>p:nth-child(3) {
+    color: rgb(0, 51, 136);
+    font-size: 17px;
+}
+
+.ProductPrice {
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#offersAvailable {
+    font-size: 13px;
+    background-color: rgb(239, 252, 245);
+    color: rgb(71, 143, 69);
+    border: 1px solid rgb(71, 143, 69);
+    border-radius: 50px;
+    width: 120px;
+    padding-left: 7px;
+}
+
+.p,
+.n {
+    font-size: 70px;
+    width: 40px;
+    height: 100px;
+    color: black;
+    background-color: transparent;
+    top: 80px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.614) 0px 7px 29px 0px;
+}
+
+.p {
+    position: absolute;
+    left: 5px;
+}
+
+.n {
+    position: absolute;
+    right: 5px;
+}
+
+.homeDivider{
+    margin-top: 5vh;
+    border: 0.2px solid rgba(128, 128, 128, 0.379);
+}
+
+#electronics{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
 
 
-@media screen and (max-width: 600px) {
-    #firstImage{
+@media screen and (max-width: 650px) {
+    #firstImage {
         display: none;
     }
-    #secondImage{
+
+    #secondImage {
         display: block;
     }
+
+    .digitalAudioFest>div>p{
+        font-size: 13px;
+    }
+
 }
-/* to be removed */
+
+@media screen and (max-width: 1100px) {
+    .headphones {
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .crauser>img{
+        height: 170px;
+    }
+    .crauser>button{
+        font-size: 30px;
+        height: 60px;
+    }
+    #electronics{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: auto;
+        width: 83%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    #electronics{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin: auto;
+        width: 83%;
+    }
+    .hideImage{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #electronics{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: auto;
+        width: 83%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #electronics{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: auto;
+        width: 83%;
+    }
+    .hide{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    #electronics{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+        margin: auto;
+        width: 83%;
+    }
+}
