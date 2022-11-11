@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useRef, useState } from 'react'
+import Explore from '../Components/Explore';
 import ProductsCard from '../Components/ProductsCard';
 import '../Styles/Home/Home.css'
 
@@ -29,7 +30,7 @@ const electronicsImage = [
 ]
 const getData = async (prod) => {
   try {
-    let res = await axios.get(`https://reliance-digital-backend.vercel.app/api/products?q=${prod}`);
+    let res = await axios.get(`https://reliance-backend.herokuapp.com/api/products?q=${prod}`);
     let resData = await res.data;
     return resData;
   } catch {
@@ -47,16 +48,28 @@ export default function Home() {
   const [televisionLoading, setTelevisionLoading] = useState(false);
   const [monitorLoading, setMonitorLoading] = useState(false);
   const [mouseLoading, setMouseLoading] = useState(false);
+  const [appleLoading, setAppleLoading] = useState(false);
+  const [usbLoading, setUsbLoading] = useState(false);
+  const [watchLoading, setWatchLoading] = useState(false);
+  const [exploreLoading, setExploreLoading] = useState(false);
 
   const [c, setC] = useState(0);
   const [c1, setC1] = useState(0);
   const [c2, setC2] = useState(0);
   const [c3, setC3] = useState(0);
+  const [c4, setC4] = useState(0);
+  const [c5, setC5] = useState(0);
+  const [c6, setC6] = useState(0);
+  const [c7, setC7] = useState(0);
 
   const [headphonesData, setHeadphonesData] = useState([]);
   const [televisionData, setTelevisionData] = useState([]);
   const [monitorData, setMonitorData] = useState([]);
   const [mouseData, setMouseData] = useState([]);
+  const [appleData, setAppleData] = useState([]);
+  const [usbData, setUsbData] = useState([]);
+  const [watchData, setWatchData] = useState([]);
+  const [exploreData, setExploreData] = useState([]);
 
   useEffect(() => {
     getData('earphones').then((res) => {
@@ -73,6 +86,9 @@ export default function Home() {
     }).finally(() => {
       setTelevisionLoading(true)
     })
+
+
+
   }, [])
 
   useEffect(() => {
@@ -83,6 +99,7 @@ export default function Home() {
     }).finally(() => {
       setMonitorLoading(true)
     })
+
     getData('mouse').then((res) => {
       setMouseData(res.results)
     }).catch((err) => {
@@ -90,23 +107,55 @@ export default function Home() {
     }).finally(() => {
       setMouseLoading(true)
     })
+    getData('iphone').then((res) => {
+      setAppleData(res.results)
+    }).catch((err) => {
+
+    }).finally(() => {
+      setAppleLoading(true)
+    })
+
+    getData('usb').then((res) => {
+      setUsbData(res.results)
+    }).catch((err) => {
+
+    }).finally(() => {
+      setUsbLoading(true)
+    })
+
+    getData('smartwatch').then((res) => {
+      setWatchData(res.results)
+    }).catch((err) => {
+
+    }).finally(() => {
+      setWatchLoading(true)
+    })
+
+    getData('electronics').then((res) => {
+      setExploreData(res.results)
+    }).catch((err) => {
+
+    }).finally(() => {
+      setExploreLoading(true)
+    })
 
   }, [])
 
-  // if (id) {
-  //   clearInterval(id)
-  // }
-  // id = setInterval(() => {
 
-  //   if (count + 1 == crauserImages.length) {
-  //     setCount(0)
-  //     setCount1(0)
-  //   } else {
-  //     setCount(prev => prev + 1)
-  //     setCount1(prev => prev + 1)
-  //   }
+  if (id) {
+    clearInterval(id)
+  }
+  id = setInterval(() => {
 
-  // }, 4000)
+    if (count + 1 == crauserImages.length) {
+      setCount(0)
+      setCount1(0)
+    } else {
+      setCount(prev => prev + 1)
+      setCount1(prev => prev + 1)
+    }
+
+  }, 4000)
 
 
 
@@ -192,6 +241,62 @@ export default function Home() {
       setC3(mouseData.length - 6)
     } else
       setC3(c3 - 1)
+  }
+
+  const handleNextState4 = () => {
+    if (c4 + 5 === usbData.length) {
+      setC4(0)
+    } else
+      setC4(c4 + 1)
+  }
+
+  const handlePrevState4 = () => {
+    if (c4 - 1 < 0) {
+      setC4(usbData.length - 6)
+    } else
+      setC4(c4 - 1)
+  }
+
+  const handleNextState5 = () => {
+    if (c5 + 5 === appleData.length) {
+      setC5(0)
+    } else
+      setC5(c5 + 1)
+  }
+
+  const handlePrevState5 = () => {
+    if (c5 - 1 < 0) {
+      setC5(appleData.length - 6)
+    } else
+      setC5(c5 - 1)
+  }
+
+  const handleNextState6 = () => {
+    if (c6 + 5 === watchData.length) {
+      setC6(0)
+    } else
+      setC6(c6 + 1)
+  }
+
+  const handlePrevState6 = () => {
+    if (c6 - 1 < 0) {
+      setC6(watchData.length - 6)
+    } else
+      setC6(c6 - 1)
+  }
+
+  const handleNextState7 = () => {
+    if (c7 + 5 === exploreData.length) {
+      setC7(0)
+    } else
+      setC7(c7 + 1)
+  }
+
+  const handlePrevState7 = () => {
+    if (c7 - 1 < 0) {
+      setC7(exploreData.length - 6)
+    } else
+      setC7(c7 - 1)
   }
 
   return (
@@ -347,7 +452,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between',width:'95%',margin:'auto' }}>
+      <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', width: '95%', margin: 'auto' }}>
         <img className='hideImage' width='350px' height='350px' style={{ marginRight: '5vw', marginTop: '5vh' }} src="https://www.reliancedigital.in/medias/IT-Accessories-Producst-Carousel-10-11-2022.jpg?context=bWFzdGVyfGltYWdlc3wxMDAwMDV8aW1hZ2UvanBlZ3xpbWFnZXMvaDE5L2g0Zi85OTE5MTg2MTQxMjE0LmpwZ3xiODE1NTlmNDdmOWJlMjM5MTRiYWI3NzZkOGJjZjI5MWY3MDJmMjRkMmI3YjhmMWQyYmYwNDA5ZTM4MjE1MTg0" alt="image" />
         <div className='headphones' style={{ paddingLeft: '7vw' }}>
           {
@@ -370,6 +475,142 @@ export default function Home() {
         <button className='p hide' style={{ left: '30vw', top: '22vh' }} onClick={handlePrevState3}>‹</button>
         <button className='n hide' style={{ right: '0vw', top: '22vh' }} onClick={handleNextState3}>›</button>
       </div>
+
+      <hr className='homeDivider' />
+
+      <div className='digitalAudioFest'>
+        <div>
+          <p>UP TO 75% ON STORAGE</p>
+          <hr />
+          <p>VIEW ALL</p>
+        </div>
+      </div>
+
+      <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between' }}>
+        <div className='headphones' style={{ paddingLeft: '6vw' }}>
+          {
+            usbLoading &&
+            <ProductsCard key={Math.random()} url={usbData[c5].media[0].productImageUrl} title={usbData[c5].name} dealPrice={usbData[c5].price.value} mrp={usbData[c5].price.mrp} youSave={usbData[c5].price.discount} />
+          }
+          {
+            usbLoading &&
+            <ProductsCard key={Math.random()} url={usbData[c5 + 1].media[0].productImageUrl} title={usbData[c5 + 1].name} dealPrice={usbData[c5 + 1].price.value} mrp={usbData[c5 + 1].price.mrp} youSave={usbData[c5 + 1].price.discount} />
+          }
+          {
+            usbLoading &&
+            <ProductsCard key={Math.random()} url={usbData[c5 + 2].media[0].productImageUrl} title={usbData[c5 + 2].name} dealPrice={usbData[c5 + 2].price.value} mrp={usbData[c5 + 2].price.mrp} youSave={usbData[c5 + 2].price.discount} />
+          }
+          {
+            usbLoading &&
+            <ProductsCard key={Math.random()} url={usbData[c5 + 3].media[0].productImageUrl} title={usbData[c5 + 3].name} dealPrice={usbData[c5 + 3].price.value} mrp={usbData[c5 + 3].price.mrp} youSave={usbData[c5 + 3].price.discount} />
+          }
+        </div>
+        <button className='p hide' style={{ left: '2vw', top: '22vh' }} onClick={handlePrevState5}>‹</button>
+        <button className='n hide' style={{ right: '35vw', top: '22vh' }} onClick={handleNextState5}>›</button>
+        <img className='hideImage' width='350px' height='350px' style={{ marginRight: '5vw', marginTop: '5vh' }} src="https://www.reliancedigital.in/medias/Storage-Producst-Carousel-10-11-2022.jpg?context=bWFzdGVyfGltYWdlc3wxMDA1NDh8aW1hZ2UvanBlZ3xpbWFnZXMvaDE0L2gzZC85OTE5MTg2MDc1Njc4LmpwZ3w5NGZlYTI2MWMyOTFmN2VmNGVjZmZkNjVmMmRjNzcwZGY0MzliMWYwZjJjNmQyNGFhOGYxOWIxNzdkMzE3ZWNi" alt="image" />
+      </div>
+
+      <hr className='homeDivider' />
+
+      <div className='digitalAudioFest'>
+        <div>
+          <p>APPLE IPHONE 14 & 14 PLUS</p>
+          <hr />
+          <p>VIEW ALL</p>
+        </div>
+      </div>
+
+      <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between', width: '95%', margin: 'auto' }}>
+        <img className='hideImage' width='350px' height='350px' style={{ marginRight: '5vw', marginTop: '5vh' }} src="https://www.reliancedigital.in/medias/iPhone-14-Producst-Carousel-27-10-2022.jpg?context=bWFzdGVyfGltYWdlc3wzMzgxMHxpbWFnZS9qcGVnfGltYWdlcy9oYzcvaGQxLzk5MTM3NzcxMjc0NTQuanBnfDA0NzFkZmIwYjVlMWZjZjUxZGY5MjA3NmVlMTdiNTY0ZjhmODU1NjkxY2Y2NDRjNjUxOTQ2MTc5Nzg5MjQxZjk" alt="image" />
+        <div className='headphones' style={{ paddingLeft: '7vw' }}>
+          {
+            appleLoading &&
+            <ProductsCard key={Math.random()} url={appleData[c4].media[0].productImageUrl} title={appleData[c4].name} dealPrice={appleData[c4].price.value} mrp={appleData[c4].price.mrp} youSave={appleData[c4].price.discount} />
+          }
+          {
+            appleLoading &&
+            <ProductsCard key={Math.random()} url={appleData[c4 + 1].media[0].productImageUrl} title={appleData[c4 + 1].name} dealPrice={appleData[c4 + 1].price.value} mrp={appleData[c4 + 1].price.mrp} youSave={appleData[c4 + 1].price.discount} />
+          }
+          {
+            appleLoading &&
+            <ProductsCard key={Math.random()} url={appleData[c4 + 2].media[0].productImageUrl} title={appleData[c4 + 2].name} dealPrice={appleData[c4 + 2].price.value} mrp={appleData[c4 + 2].price.mrp} youSave={appleData[c4 + 2].price.discount} />
+          }
+          {
+            appleLoading &&
+            <ProductsCard key={Math.random()} url={appleData[c4 + 3].media[0].productImageUrl} title={appleData[c4 + 3].name} dealPrice={appleData[c4 + 3].price.value} mrp={appleData[c4 + 3].price.mrp} youSave={appleData[c4 + 3].price.discount} />
+          }
+        </div>
+        <button className='p hide' style={{ left: '30vw', top: '22vh' }} onClick={handlePrevState4}>‹</button>
+        <button className='n hide' style={{ right: '0vw', top: '22vh' }} onClick={handleNextState4}>›</button>
+      </div>
+
+      <hr className='homeDivider' />
+
+      <div className='digitalAudioFest'>
+        <div>
+          <p>SMARTWATCHES STARTING FROM 999</p>
+          <hr />
+          <p>VIEW ALL</p>
+        </div>
+      </div>
+
+      <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-between' }}>
+        <div className='headphones' style={{ paddingLeft: '6vw' }}>
+          {
+            watchLoading &&
+            <ProductsCard key={Math.random()} url={watchData[c6].media[0].productImageUrl} title={watchData[c6].name} dealPrice={watchData[c6].price.value} mrp={watchData[c6].price.mrp} youSave={watchData[c6].price.discount} />
+          }
+          {
+            watchLoading &&
+            <ProductsCard key={Math.random()} url={watchData[c6 + 1].media[0].productImageUrl} title={watchData[c6 + 1].name} dealPrice={watchData[c6 + 1].price.value} mrp={watchData[c6 + 1].price.mrp} youSave={watchData[c6 + 1].price.discount} />
+          }
+          {
+            watchLoading &&
+            <ProductsCard key={Math.random()} url={watchData[c6 + 2].media[0].productImageUrl} title={watchData[c6 + 2].name} dealPrice={watchData[c6 + 2].price.value} mrp={watchData[c6 + 2].price.mrp} youSave={watchData[c6 + 2].price.discount} />
+          }
+          {
+            watchLoading &&
+            <ProductsCard key={Math.random()} url={watchData[c6 + 3].media[0].productImageUrl} title={watchData[c6 + 3].name} dealPrice={watchData[c6 + 3].price.value} mrp={watchData[c6 + 3].price.mrp} youSave={watchData[c6 + 3].price.discount} />
+          }
+        </div>
+        <button className='p hide' style={{ left: '2vw', top: '22vh' }} onClick={handlePrevState6}>‹</button>
+        <button className='n hide' style={{ right: '35vw', top: '22vh' }} onClick={handleNextState6}>›</button>
+        <img className='hideImage' width='350px' height='350px' style={{ marginRight: '5vw', marginTop: '5vh' }} src="https://www.reliancedigital.in/medias/Smartwatches-Producst-Carousel-27-10-2022-02.jpg?context=bWFzdGVyfGltYWdlc3wxMDA3NTB8aW1hZ2UvanBlZ3xpbWFnZXMvaGViL2gxYS85OTEzNzc2Nzk5Nzc0LmpwZ3w0YzI5OWYwMDI2YzYzMGJiZmRhZGRhZGQyNWIwNTc1OGVmZDRlZmY2NmYzN2E4ZDdkZjMxMzRkM2QxMGYzNmQy" alt="image" />
+      </div>
+
+
+      <div style={{ position: 'relative', backgroundColor: 'rgb(247, 247, 247)' }}>
+        <div style={{ textAlign: 'center', fontSize:'27px', paddingTop:'2vh', fontWeight:'bold' }}>
+          <p>EXPLORE OUR RANGE OF PRODUCTS</p>
+        </div>
+        <div className='headphones'>
+          {
+            exploreLoading &&
+            <Explore key={Math.random()} url={exploreData[c7].media[0].productImageUrl} title={exploreData[c7].name} dealPrice={exploreData[c7].price.value} mrp={exploreData[c7].price.mrp} youSav7e={exploreData[c7].price.discount} />
+          }
+          {
+            exploreLoading &&
+            <Explore key={Math.random()} url={exploreData[c7 + 1].media[0].productImageUrl} title={exploreData[c7 + 1].name} dealPrice={exploreData[c7 + 1].price.value} mrp={exploreData[c7 + 1].price.mrp} youSave={exploreData[c7 + 1].price.discount} />
+          }
+          {
+            exploreLoading &&
+            <Explore key={Math.random()} url={exploreData[c7 + 2].media[0].productImageUrl} title={exploreData[c7 + 2].name} dealPrice={exploreData[c7 + 2].price.value} mrp={exploreData[c7 + 2].price.mrp} youSave={exploreData[c7 + 2].price.discount} />
+          }
+          {
+            exploreLoading &&
+            <Explore key={Math.random()} url={exploreData[c7 + 3].media[0].productImageUrl} title={exploreData[c7 + 3].name} dealPrice={exploreData[c7 + 3].price.value} mrp={exploreData[c7 + 3].price.mrp} youSave={exploreData[c7 + 3].price.discount} />
+          }
+          {
+            exploreLoading &&
+            <Explore key={Math.random()} url={exploreData[c7 + 4].media[0].productImageUrl} title={exploreData[c7 + 4].name} dealPrice={exploreData[c7 + 4].price.value} mrp={exploreData[c7 + 4].price.mrp} youSave={exploreData[c7 + 4].price.discount} />
+          }
+        </div>
+        <button className='p' style={{ top: '31vh' }} onClick={handlePrevState7}>‹</button>
+        <button className='n' style={{ top: '31vh' }} onClick={handleNextState7}>›</button>
+      </div>
+
+
+
 
 
 
