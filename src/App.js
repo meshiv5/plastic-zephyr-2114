@@ -6,9 +6,9 @@ import Home from "./Pages/Home";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <Footer />
+      {/* <Navbar /> */}
+      {/* <Home /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
