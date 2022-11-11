@@ -100,6 +100,7 @@
 .child>div{
     display: flex;
     gap: 3vw;
+
 }
 
 .parent:hover .child {
@@ -143,4 +144,8 @@
     #botNav {
         display: none;
     }
+}@media screen and (max-width:1920px){
+  .child{
+    margin-top: 122px;
+  }
 }

@@ -7,6 +7,9 @@ import AllRoutes from "./Routes/AllRoutes";
 function App() {
   return (
     <div className="App">
+      <Navbar></Navbar>
+      <Home></Home>
+      <Footer></Footer>
     </div>
   );
 }
