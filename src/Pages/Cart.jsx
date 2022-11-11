@@ -114,8 +114,9 @@ const Cart = () => {
           ))}
         </Box>
         <Spacer />
-        <Box  boxShadow = "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;"
-         border="1px solid #bdbdbd" width="30%"  height="265px" >
+        <Box  boxShadow = "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;"
+         border="1px solid #bdbdbd" width="30%"  height="265px" 
+         marginBottom="10px">
           <br />
           <InputGroup size="sm" width="90%" margin="auto">
             <Input  marginBottom="15px"  placeholder="Coupon Code" />
@@ -151,9 +152,10 @@ const Cart = () => {
               <Text>₹{total}</Text>
             </Flex>
           </Box>
-        </Box>
-      </Flex>
-      <Text fontSize="13px" width="400px" >Safe and Sacure Payments Easy returns 100% Authentic products</Text>
+        </Box >
+      </Flex >
+      <Text marginLeft="855" marginBottom="270px"
+      width="400px" fontSize="13px" >Safe and Sacure Payments Easy returns 100% Authentic products</Text>
     </Box>
  
  
