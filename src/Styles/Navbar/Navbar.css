@@ -14,9 +14,12 @@
   text-decoration: none;
   color: white;
   margin-top: 7px;
+  font-size: 15px;
 }
+
 #topNav > h5 {
   padding: 6px;
+  font-size: 15px;
 }
 
 .topNavDivider {
@@ -79,6 +82,10 @@
 
 #botNav > h6:hover {
   background-color: rgb(228, 37, 41);
+}
+
+.parent>h6{
+  font-size: 13px;
 }
 
 .parent {
@@ -171,11 +178,18 @@
     margin-left: 10px;
   }
 }
-@media screen and (max-width: 1920px) {
+
+@media only screen and (min-width: 1100px) and (max-width: 1920px){
   .child {
-    margin-top: 122px;
+    margin-top: 144px;
   }
 }
+@media only screen and (min-width: 1149px) and (max-width: 1920px){
+  .child {
+    margin-top: 144px;
+  }
+}
+
 @media screen and (max-width: 651px) {
   .menuIcon {
     display: inline;
