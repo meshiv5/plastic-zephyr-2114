@@ -88,8 +88,9 @@
   color: rgb(71, 143, 69);
   border: 1px solid rgb(71, 143, 69);
   border-radius: 50px;
-  width: 120px;
+  width: 160px;
   padding-left: 7px;
+  text-align: center;
 }
 
 .p,

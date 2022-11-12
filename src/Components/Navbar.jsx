@@ -73,20 +73,18 @@ export default function Navbar() {
           <img width="20px" src="https://cdn-icons-png.flaticon.com/512/107/107122.png" alt="searchIcon" />
         </div>
         <div>
-          <h5>Select your PIN Code</h5>
+          <h5 style={{ fontSize: "15px" }}>Select your PIN Code</h5>
           <hr className="topNavDivider" />
           <img id="cart" width="20px" src="https://cdn-icons-png.flaticon.com/512/649/649931.png" alt="cartIcon" />
-          
-          <Link to={"/cart"}>
-          <h5>Cart</h5>
-        </Link>
 
+          <Link to={"/cart"}>
+            <h5>Cart</h5>
+          </Link>
+
+          <h3 style={{ fontSize: "15px" }}>Cart</h3>
           <hr className="topNavDivider" />
           <img width="20px" src="https://cdn-icons-png.flaticon.com/512/2321/2321232.png" alt="loginIcon" />
-         
-          <Link to={"/login"}>
-          <h5>Login</h5>
-        </Link>
+          <h5 style={{ fontSize: "15px" }}>Login</h5>
         </div>
       </div>
 
