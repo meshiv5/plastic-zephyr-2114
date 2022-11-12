@@ -44,20 +44,14 @@ const Cart = () => {
     <Box width="90%" margin="auto">
       <br />
       <Flex>
-        <Text>My Cart ({item.length} Items)</Text>
-        <Spacer />
-        <Spacer />
-        <Spacer />
-        <Spacer />
-        <Spacer />
-        <Spacer />
-        <Spacer />
-        <Spacer />
-        <Spacer />
-        <Spacer />
-        <Text>
+        <Flex border="1px solid #D3D3D3" boxShadow = "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;" height="50px">
+        <Text marginTop="10px" marginRight="510px" paddingLeft="20px">My Cart ({item.length} Items)</Text>
+       
+        <Text marginTop="10px" paddingRight="15px">
           Shipping to: 670007 <i class="fa-solid fa-location-dot"></i>
         </Text>
+        </Flex>
+       
         <Spacer />
         <Button colorScheme="red" variant="solid" width="30%" onClick={handleCheckout}>
           Checkout
@@ -120,42 +114,51 @@ const Cart = () => {
           ))}
         </Box>
         <Spacer />
-        <Box border="1px solid #bdbdbd" width="30%" height="300px">
+        <Box  boxShadow = "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;"
+         border="1px solid #bdbdbd" width="30%"  height="265px" 
+         marginBottom="10px">
           <br />
           <InputGroup size="sm" width="90%" margin="auto">
-            <Input placeholder="Coupon Code" />
+            <Input  marginBottom="15px"  placeholder="Coupon Code" />
             <InputRightAddon children="APPLY" color="blue" />
           </InputGroup>
+          
+          <Divider margin="auto" width="330px"  marginBottom="15px" />
+
           <Box width="90%" margin="auto">
-            <Text fontWeight="bold" textAlign="left">
+            <Text marginBottom="-10px" textAlign="left">
               PRICE DETAILS
             </Text>
             <br />
-            <Flex justifyContent="space-between">
-              <Text>Price ({item.length} Items)</Text>
+            <Flex  marginBottom="-8px" justifyContent="space-between">
+              <Text >Price ({item.length} Items)</Text>
               <Text>₹{total}</Text>
             </Flex>
             <br />
-            <Flex justifyContent="space-between">
+            <Flex  marginBottom="-8px" justifyContent="space-between">
               <Text>Delivery Charges</Text>
               <Text color="green">FREE</Text>
             </Flex>
-            <br />
+            {/* <br />
             <Divider />
             <Flex justifyContent="space-between">
               <Text>Discount</Text>
               <Text>₹1000</Text>
-            </Flex>
+            </Flex> */}
             <br />
-            <Divider />
+            <Divider marginBottom="16px" />
             <Flex justifyContent="space-between" fontWeight="bold">
               <Text>AMOUNT PAYABLE</Text>
-              <Text>₹{total - 1000}</Text>
+              <Text>₹{total}</Text>
             </Flex>
           </Box>
-        </Box>
-      </Flex>
+        </Box >
+      </Flex >
+      <Text marginLeft="855" marginBottom="270px"
+      width="400px" fontSize="13px" >Safe and Sacure Payments Easy returns 100% Authentic products</Text>
     </Box>
+ 
+ 
   );
 };
 
