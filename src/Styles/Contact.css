@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "system-ui", sans-serif;
+}
+.contact-main{
+    width: 100%;
+    margin:auto;
+    padding: 0 20px 20px;
+}
+.contact-image-wrapper {
+    background-image: url('../Assets/log/contact.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 53vh;
+    max-height: 350px;
+    position: relative;
+}
+.contact-text{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.text1{
+    color: #ffff;
+    font-size: 39px;
+    font-weight: 400;
+}
+.text2{
+    color: #ffff;
+    font-size: 19px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* section 2 Css  */
+.social-box{
+    /* width: 70%; */
+    display: flex;
+    margin: 25px 7%;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+.social-content{
+    width: 32%;
+    border: 0.1px solid #dedede;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.social-log{
+    background-color: #204a86;
+    padding: 10px 0px;
+}
+.social-logo{
+    display: block;
+    margin: auto;
+}
+.email-logo{
+    /* border: 1px solid red; */
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.call-head{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.call-box{
+    padding: 10px 0;
+    line-height: 30px;
+    color: #645d65;
+}
+.social-text{
+    padding: 10px 0;
+    line-height: 30px;
+    color: #645d65;
+}
+.numbers{
+    font-size: 20px;
+    font-weight: 500;
+    color:#003380;
+}
+.email-text1{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color:#003380;
+    
+}
+.email-text2{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color:#003380;
+    
+}
+
+.detail-main{
+    margin: 25px 7%;
+    font-size: 17px;
+    color: #707070;
+    padding: 20px 40px 0px 40px;
+    /* line-height: 25px; */
+}
+.detail-head{
+    font-size: 35px;
+    color: #204A86;
+}
+.anchor{
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .email-logo {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-main {
+        padding: 0 8px;
+    }
+    .social-box {
+        flex-direction: column;
+    }
+    .social-content {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

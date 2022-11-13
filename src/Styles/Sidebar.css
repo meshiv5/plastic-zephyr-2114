@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "system-ui", sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.side-main {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 60%;
+  flex-shrink: 0;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+  position: absolute;
+  height: 100vh;
+}
+.has-border {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: -1px;
+}
+.bi-plus {
+  font-size: 18px;
+  font-weight: bold;
+}
+.sidebar div.disabled-link {
+  background: #e7e7e7;
+  color: #8f8f8f;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sidebar-item {
+  display: block;
+  transition: background-color 0.15s;
+  /* border-radius: 5px; //checking */
+  position: relative;
+  background: inherit;
+}
+.sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.sidebar-login-item {
+  background: #e42529;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 1.5em 1em;
+  display: block;
+}
+
+.sidebar-title {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0.75em 1em;
+}
+.sidebar-title span i {
+  display: inline-block;
+  width: 1.5em;
+}
+.sidebar-title .toggle-btn {
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: FontAwesome;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn {
+  transform: rotate(180deg);
+}
+.sidebar-content {
+  height: 0;
+  overflow: auto;
+  display: none;
+}
+.sidebar-item.open > .sidebar-content {
+  display: block;
+  height: auto;
+}
+
+.sidebar-item.plain {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75em 1em;
+  border-top: 1px solid #e7e7e7;
+}
+.sidebar-item.plain:hover {
+  text-decoration: underline;
+}
+.sidebar-item.plain i {
+  display: inline-block;
+  width: 1.7em;
+}
+.links {
+  cursor: pointer;
+}
+.links:hover {
+  text-decoration: underline;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+.item-link {
+  cursor: pointer;
+}
+
+.bold-text {
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+.child-content {
+  margin-left: 1em;
+}
+.child-content div.sidebar-item:hover {
+  background-color: transparent;
+}
+

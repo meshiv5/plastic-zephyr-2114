@@ -1,0 +1,46 @@
+.topFooter>div{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: rgb(0, 51, 128);
+    color: white;
+}
+
+.footerChild>ol{
+    font-size: 16px;
+    padding-bottom: 7px;
+}
+
+#botFooter{
+  background-color: rgb(10, 36, 74);
+  color: white;
+}
+#botFooter>div{
+    width: 80%;
+    margin: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+#botFooter>div>p, #botFooter>p{
+    font-size:16px ;
+    text-align: center;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+@media screen and (max-width: 519px) {
+
+    #align{
+        flex-direction: column;
+        margin: auto;
+        padding-left: 25%;
+    }
+    #align>div{
+        padding-bottom: 10px;
+    }
+
+}
