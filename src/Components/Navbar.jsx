@@ -77,14 +77,14 @@ export default function Navbar() {
           <hr className="topNavDivider" />
           <img id="cart" width="20px" src="https://cdn-icons-png.flaticon.com/512/649/649931.png" alt="cartIcon" />
 
-          <Link to={"/cart"}>
-            <h5>Cart</h5>
-          </Link>
-
-          <h3 style={{ fontSize: "15px" }}>Cart</h3>
+          <h3 style={{ fontSize: "15px" }}>
+            <Link to={"/cart"}>Cart </Link>
+          </h3>
           <hr className="topNavDivider" />
           <img width="20px" src="https://cdn-icons-png.flaticon.com/512/2321/2321232.png" alt="loginIcon" />
-          <h5 style={{ fontSize: "15px" }}>Login</h5>
+          <h5 style={{ fontSize: "15px" }}>
+            <Link to={"/login"}>Login</Link>
+          </h5>
         </div>
       </div>
 
