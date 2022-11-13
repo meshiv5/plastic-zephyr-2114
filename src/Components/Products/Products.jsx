@@ -1,19 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import ProductCard from "./ProductCard";
 // import { useSearchParams } from "react-router-dom";
 
-const getProducts = async () => {
-  return fetch("https://reliance-digital-backend.vercel.app/api/products").then(
-    (res) => res.json()
-  );
+const getProducts = async (q) => {
+  return fetch(
+    `https://reliance-digital-backend.vercel.app/api/products?q=${q}`
+  ).then((res) => res.json());
 };
 
 const Products = () => {
   const [products, setProducts] = useState([]);
 
+  const [params, setParams] = useSearchParams();
+  const q = params.get("q") || "mobiles";
+
   useEffect(() => {
-    getProducts().then((res) => {
+    getProducts(q).then((res) => {
       console.log(res);
       setProducts(res.results);
     });
