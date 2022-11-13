@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import "../Styles/Navbar/Navbar.css";
 import { FaBars } from "react-icons/fa";
 import Sidebar from "./Sidebar";
+import { AppContext } from '../context/AppContext';
+import { Box, Button, Flex, Image, Input, Spacer, Icon, Avatar } from '@chakra-ui/react'
+
 //  import { Route,Routes } from 'react-router-dom'
 // import Login from "../Pages/Login"
 
 export default function Navbar() {
   const navigate = useNavigate();
+  const {firstName,setsearch,car} = useContext(AppContext)
   const [isGreaterThan1100px, setIsGreaterThan1100px] = useState(false);
   const menyStyle2 = {
     display: "none",
@@ -73,18 +77,29 @@ export default function Navbar() {
           <img width="20px" src="https://cdn-icons-png.flaticon.com/512/107/107122.png" alt="searchIcon" />
         </div>
         <div>
-          <h5 style={{ fontSize: "15px" }}>Select your PIN Code</h5>
-          <hr className="topNavDivider" />
-          <img id="cart" width="20px" src="https://cdn-icons-png.flaticon.com/512/649/649931.png" alt="cartIcon" />
+          <h5 style={{ marginLeft:"50px",marginRight:"20px", fontSize: "15px" }}>Select your PIN Code</h5>
+          {/* <hr className="topNavDivider" /> */}
 
-          <h3 style={{ fontSize: "15px" }}>
+          {/* <img id="cart" width="20px" src="https://cdn-icons-png.flaticon.com/512/649/649931.png" alt="cartIcon" /> */}
+
+          {/* <h3 style={{ fontSize: "15px" }}>
             <Link to={"/cart"}>Cart </Link>
-          </h3>
-          <hr className="topNavDivider" />
-          <img width="20px" src="https://cdn-icons-png.flaticon.com/512/2321/2321232.png" alt="loginIcon" />
-          <h5 style={{ fontSize: "15px" }}>
-            <Link to={"/login"}>Login</Link>
-          </h5>
+          </h3> */}
+
+        <Box cursor="pointer" marginRight="20px" display="flex" onClick={()=>navigate("/cart")}><i class="fa-solid fa-cart-shopping"></i> 
+        {car>0&&<Box style={{width:"25px",height:"25px",borderRadius:"50%",backgroundColor:"black"}}>{car>0?car:""}</Box> }Cart</Box>
+ 
+         
+          {/* <img width="20px" src="https://cdn-icons-png.flaticon.com/512/2321/2321232.png" alt="loginIcon" /> */}
+         
+          {/* <h5 style={{ fontSize: "15px" }}>
+            <Link onClick={()=>navigate("/login")} cursor="pointer"><i class="fa-solid fa-user"></i> {firstName!==""?firstName:"Login"}>Login</Link>
+          </h5> */}
+
+        <Spacer/>
+        <Box onClick={()=>navigate("/login")}  cursor="pointer"><i class="fa-solid fa-user"></i> {firstName!==""?firstName:"Login"}</Box>
+        <Spacer/>
+
         </div>
       </div>
 

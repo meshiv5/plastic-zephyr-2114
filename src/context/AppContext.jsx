@@ -53,57 +53,56 @@ const properties1 = {
 };
 
 let addItems1 = [
+
   {
-    image:
-      "https://www.reliancedigital.in/medias/Acer-15-Aspire3-R3-Laptop-492849812-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2MjAwN3xpbWFnZS9qcGVnfGltYWdlcy9oM2MvaDMyLzk4NDEyMjc0OTc1MDIuanBnfDEwNjk4MWE3MTQ5MmY1YjJkMjE1NWYwMTFkNDlhMTViNmNkMmFjOGFjODE5NTEwYzdkZTA2MDJhYWM1MTVjYzI",
-    name: "HP 14s-dq3032tu Thin &amp  Light Laptop (Intel Celeron N4500/8GB/256GB SSD/Intel UHD Graphics/Windows 11/MSO/HD), 35.56 cm (14 inch)",
-    price: 46900,
-    offer: 59900,
+    image: "https://www.reliancedigital.in/medias/Philips-SHE1505-HeadphonesandHeadstes-491378220-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w1NDcyM3xpbWFnZS9qcGVnfGltYWdlcy9oNzMvaDIyLzkzNDA5ODMzNzc5NTAuanBnfDU5NzE2YTExYjgxZGFiMmY5MDRmZmZhMGYwMzYxNzE1NTk4YWYzNmY5MDUyNzdhNTQ3MDdmZmZjMThiYzg5ZjI",
+    name: "Philips SHE1505 Earphone Philips UpBeat SHE1505BK Wired Earphone with mic Black",
+    price: 329,
+    offer: 400,
     save: 10,
     id: 1,
     qty: 0,
   },
   {
-    image:
-      "https://www.reliancedigital.in/medias/Acer-A314-35-Laptop-492849921-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxNzIxM3xpbWFnZS9qcGVnfGltYWdlcy9oMTcvaGQ5Lzk4MTkzMTc0MDM2NzguanBnfDdiZDg3ZTA1NjE0MTE1NzFjNGU3NDE3OTMyYzc0NzljMzRiM2RjNjE5OGFhN2U1YWVhNjQ3YmI5YTMwM2JhNjI",
-    name: "HP 15s-fq4022TU Laptop (11th Gen-Intel Core i5-1155G7/8GB/512GB SSD + 32GB Intel Optane Memory/Intel Iris Xe Graphics/Windows 11/MSO/FHD), 39.6 cm (15.6 inch)",
-    price: 30099,
-    offer: 39900,
-    save: 10,
+    image: "https://www.reliancedigital.in/medias/Realme-RMA2016-HEADPHONES-EARPHONES-492579163-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w3Mjk0N3xpbWFnZS9qcGVnfGltYWdlcy9oYjIvaGNmLzk3MzE3MzQzMzk2MTQuanBnfDM1YWNlY2I3MmM1ODAxNDZjNDMwNWMxYmViMmQyOTI1MzUwOTBlOTBjNDdjYmRhNjZkMzYwMDk5ZmYwYTk4ZmY",
+    name: "Realme Earphone Buds 2 Neo Wired Earphone with Mic, Bass, Durable Angled Design (Black)",
+    price: 499,
+    offer: 599,
+    save: 17,
     id: 2,
     qty: 0,
   },
   {
-    image:
-      "https://www.reliancedigital.in/medias/HP-14s-dq3032tu-Laptops-492849723-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1Mjk3N3xpbWFnZS9qcGVnfGltYWdlcy9oNmQvaDY4Lzk4MDcxMDAwNTE0ODYuanBnfDk1ZTliOGMwYjUzMDExODFkZDRkZDQyYmZmZWM4M2I1OGExN2E2MGIyMDkwM2NlZTdmYzA3NWM0NzAwY2YzMmE",
-    name: "Lenovo 8JIN IdeaPad Slim 3 Laptop (10th Gen-Intel Core i3-10110U/4GB/256GB SSD/Intel UHD Graphics/Windows 11/MSO/FHD), 39.62 cm (15.6 inch)",
-    price: 27099,
-    offer: 35900,
-    save: 10,
+    image: "https://www.reliancedigital.in/medias/Realme-RMA2016-HEADPHONES-EARPHONES-492579164-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNDM5NjV8aW1hZ2UvanBlZ3xpbWFnZXMvaDI3L2gyYS85NzMxNzM5NTgyNDk0LmpwZ3xjMTE5ZDMwOGJjMWY0ZGJmYzQ5MmRhYzE0OTJhMjRlM2UwN2MyMmRiNGU5ODdiNGZjNzRkMGY3NGM0Yjc5MmEy",
+    name: "Realme Earphone Buds 2 Neo Wired Earphone with Mic, Bass, Durable Angled Design (Black)",
+    price: 489,
+    offer: 599,
+    save: 16,
     id: 3,
     qty: 0,
   },
   {
-    image:
-      "https://www.reliancedigital.in/medias/HP-533U4PAACJ-Laptop-492849312-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMzM2MnxpbWFnZS9qcGVnfGltYWdlcy9oY2UvaGNkLzk4MjQ0MzU0NzAzNjYuanBnfDc0YTRhMTY0NzNlMjQ5YzY2MDg3ZmU2YjQyNmNhNzU0ODQ5ZjkyOGE1N2RjMDBhZTM4YTM5ZjQ4ZTlhMmM0NTE",
-    name: "Lenovo 41IN IdeaPad Slim 3 Laptop (10th Gen-Intel Core i3-1005G1/4GB/256GB SSD/Intel UHD Graphics/Windows 11/MSO/FHD), 35.56 cm (14 inch)",
-    price: 44099,
-    offer: 49900,
+    image: "https://www.reliancedigital.in/medias/JBL-T110BT-Headphones-and-Headsets-491377970-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2NzA5NXxpbWFnZS9qcGVnfGltYWdlcy9oNDAvaDFlLzg5MzY4MjcxMjU3OTAuanBnfDNiNzM4Y2IzNjk0ZDBjZWI1MTQwNmUzYzRlNjIwYmJhMGM2OTNjMTlkZjczOTIzNzU1YTM2ZjE2ODNkMjZiMTI",
+    name: "JBL T110BT Wireless Earphone, White",
+    price: 2259,
+    offer: 2499,
     save: 10,
     id: 4,
     qty: 0,
   },
   {
-    image:
-      "https://www.reliancedigital.in/medias/Lenovo-8JIN-Laptops-492850142-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wxMDYyNHxpbWFnZS9qcGVnfGltYWdlcy9oZWYvaGE0Lzk4NDk0MDkwMTE3NDIuanBnfDE4ZGNiN2ZkMzM4YWU3Yjc2YTJmZjRmNjk4OWY1N2YzY2I1NDAxOGM1ZDU5YTIxNDAzNjVhZGEzNGEyOGZmZDc",
-    name: "Lenovo 7KIN IdeaPad Slim 3i Laptop (Intel Celeron N4020/4GB/256GB/ Windows 11/MSO/HD), 35.56 cm (14 inch)",
-    price: 39009,
-    offer: 41900,
-    save: 10,
+    image: "https://www.reliancedigital.in/medias/Philips-SHE1515-Headphones-and-Headstes-491378221-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w4NjU3NHxpbWFnZS9qcGVnfGltYWdlcy9oNWQvaGVjLzg5NDY4MTk4NTg0NjIuanBnfDczY2Y4YTNiYWE0MDZkODRkYTQ5ZTcxNDJiOGI3ZDEwZWIxNTI3Mzc4ZGY5MzEyYTg5ODdmOWQ4OGQ0NGRhNjE",
+    name: "Philips SHE1515 Wired Earphone, Black",
+    price: 200,
+    offer: 799,
+    save: 75,
     id: 5,
     qty: 0,
   },
-  {
+
+ 
+
+{
     image:
       "https://www.reliancedigital.in/medias/Lenovo-41IN-Laptops-492850143-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w2NzU3MXxpbWFnZS9qcGVnfGltYWdlcy9oNzQvaGVkLzk4NDkyMzgzMjMyMzAuanBnfDA0NWNmNjdiOWE2ZjAyMDBhZjNjNWVhNThjNmJlYmE3MDc1NTc4MWU1MGJjZjgzYTNlYzBjYWVlOGI5NTZmY2Y",
     name: "Acer A315-23 Aspire 3 Laptop (AMD Ryzen 3-3250U/4 GB/256 GB SSD/AMD Radeon Graphics/Windows 11/ Full HD), 39.62 cm (15.6 inch)",
