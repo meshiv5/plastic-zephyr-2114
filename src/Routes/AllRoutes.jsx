@@ -13,6 +13,7 @@ import Register from '../Pages/Register'
 import Checkout from '../Pages/Checkout'
 import Payments from '../Pages/Payment'
 import Final from '../Pages/Final'
+import Singlepage from '../Pages/singlepage'
 
 const AllRoutes = () => {
   return (
@@ -29,6 +30,7 @@ const AllRoutes = () => {
       <Route path='/checkout' element={<Checkout/>}/>
       <Route path='/payments' element={<Payments/>}/>
       <Route path='/final' element={<Final/>}/>
+      <Route path='/products/:id' element={<Singlepage/>}/>
     </Routes>
   );
 };
