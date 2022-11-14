@@ -3,6 +3,9 @@ import { useEffect, useRef, useState } from 'react'
 import Explore from '../Components/Explore';
 import ProductsCard from '../Components/ProductsCard';
 import '../Styles/Home/Home.css'
+import { Link } from "react-router-dom";
+import { AppContext } from '../context/AppContext';
+
 
 const crauserImages = [
   'https://www.reliancedigital.in/medias/Audio-Fest-Carousel-Banner-07-11-c+2022.jpg?context=bWFzdGVyfGltYWdlc3w4NzQyN3xpbWFnZS9qcGVnfGltYWdlcy9oNzEvaDc2Lzk5MTgyMDE0MzAwNDYuanBnfDgyOGRjYjJiN2E2MTgxM2ZmNGM1YTk5YmRmNzQ3YjFkMTZiMTQxNmJjN2U1NGY4ZTk1MGZjYzI2YzU3OTU4NWQ',
@@ -323,24 +326,30 @@ export default function Home() {
       <div style={{ position: 'relative' }}>
         <div className='headphones'>
           {
-            headphoneLoading &&
-            <ProductsCard key={Math.random()} url={headphonesData[c].media[0].productImageUrl} title={headphonesData[c].name} dealPrice={headphonesData[c].price.value} mrp={headphonesData[c].price.mrp} youSave={headphonesData[c].price.discount} />
+            headphoneLoading &&  <Link to={"/products/1"}>
+           <ProductsCard  key={Math.random()} url={headphonesData[c].media[0].productImageUrl} title={headphonesData[c].name} dealPrice={headphonesData[c].price.value} mrp={headphonesData[c].price.mrp} youSave={headphonesData[c].price.discount} />
+          </Link>
+           
           }
           {
-            headphoneLoading &&
+            headphoneLoading &&  <Link to={"/products/2"}>
             <ProductsCard key={Math.random()} url={headphonesData[c + 1].media[0].productImageUrl} title={headphonesData[c + 1].name} dealPrice={headphonesData[c + 1].price.value} mrp={headphonesData[c + 1].price.mrp} youSave={headphonesData[c + 1].price.discount} />
+            </Link>
           }
           {
-            headphoneLoading &&
+            headphoneLoading &&  <Link to={"/products/3"}>
             <ProductsCard key={Math.random()} url={headphonesData[c + 2].media[0].productImageUrl} title={headphonesData[c + 2].name} dealPrice={headphonesData[c + 2].price.value} mrp={headphonesData[c + 2].price.mrp} youSave={headphonesData[c + 2].price.discount} />
+            </Link>
           }
           {
-            headphoneLoading &&
+            headphoneLoading &&  <Link to={"/products/4"}>
             <ProductsCard key={Math.random()} url={headphonesData[c + 3].media[0].productImageUrl} title={headphonesData[c + 3].name} dealPrice={headphonesData[c + 3].price.value} mrp={headphonesData[c + 3].price.mrp} youSave={headphonesData[c + 3].price.discount} />
+            </Link>
           }
           {
-            headphoneLoading &&
+            headphoneLoading &&   <Link to={"/products/5"}>
             <ProductsCard key={Math.random()} url={headphonesData[c + 4].media[0].productImageUrl} title={headphonesData[c + 4].name} dealPrice={headphonesData[c + 4].price.value} mrp={headphonesData[c + 4].price.mrp} youSave={headphonesData[c + 4].price.discount} />
+            </Link>
           }
         </div>
         <button className='p' onClick={handlePrevState}>‹</button>
