@@ -47,18 +47,18 @@ ___
  ## Glipms of project
 __
 
-   - ###Homepage 
+   - ### Homepage 
 <img src="https://i.imgur.com/QQph7Iq.png" alt="homepage" />
 
 
-   - ###Cart 
+   - ### Cart 
 <img src="https://i.imgur.com/xPP2dqg.png" alt="cart" />
 
 
-   - ###Login 
+   - ### Login 
 <img src="https://i.imgur.com/tny82aY.png" alt="login" />
 
 
 
-   - ###Mobile View
+   - ### Mobile View
 <img src="https://i.imgur.com/FLb3gtw.png" alt="mobileView" />
